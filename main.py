@@ -18,10 +18,15 @@ print()
 #Lopend spel
 
 def speler_actie():
+  global aantallucifers
+  if aantallucifers > 0:
+   print("Er zijn nog %s lucifers" % aantallucifers)
+   aantalwegpakken = input("Hoeveel wil je er pakken? ")
+   aantalwegpakken = int(aantalwegpakken)
+   aantallucifers -= aantalwegpakken
+   print("Aantal lucifers over: %s" % aantallucifers)
   turn = 1
-  print("Er zijn nog %s lucifers" % aantallucifers)
-  aantalwegpakken = input("Hoeveel wil je er pakken?")
-  print("Aantal lucifers over: %s" % aantallucifers)
+
 
 def computer_actie():
   turn = 0
