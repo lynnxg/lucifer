@@ -25,10 +25,21 @@ def speler_actie():
    aantalwegpakken = int(aantalwegpakken)
    aantallucifers -= aantalwegpakken
    print("Aantal lucifers over: %s" % aantallucifers)
+   print()
   turn = 1
 
 
 def computer_actie():
+  global aantallucifers
+  if aantallucifers > 0:
+    if aantallucifers > 3:
+
+    elif aantallucifers == 3:
+
+    elif aantallucifers == 2:
+
+    else:
+
   turn = 0
 
 
