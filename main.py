@@ -19,6 +19,7 @@ print()
 
 def speler_actie():
   global aantallucifers
+  global turn
   if aantallucifers > 0:
    print("Er zijn nog %s lucifers" % aantallucifers)
    aantalwegpakken = input("Hoeveel wil je er pakken? ")
@@ -26,11 +27,12 @@ def speler_actie():
    aantallucifers -= aantalwegpakken
    print("Aantal lucifers over: %s" % aantallucifers)
    print()
-  turn = 1
+   turn = 1
 
 
 def computer_actie():
   global aantallucifers
+  global turn
   if aantallucifers > 0:
     if aantallucifers > 3:
       aantalwegpakken2  = random.randint(1 , 3)
@@ -50,8 +52,9 @@ def computer_actie():
 #Beurten
 turn = 0
 
-if turn == 0:
-  speler_actie()
-else:
-  computer_actie()
+while aantallucifers > 0:
+  if turn == 0:
+   speler_actie()
+  elif turn == 1:
+   computer_actie()
 
