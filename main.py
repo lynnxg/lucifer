@@ -34,12 +34,16 @@ def computer_actie():
   if aantallucifers > 0:
     if aantallucifers > 3:
       aantalwegpakken2  = random.randint(1 , 3)
+      print("De computer pakt %s lucifers weg" % aantalwegpakken2)
     elif aantallucifers == 3:
       aantallucifers -= 2
+      print("De computer pakt 2 lucifers weg")
     elif aantallucifers == 2:
       aantallucifers -=1
+      print("De computer pakt 1 lucifer weg")
     else:
       aantallucifers -=1
+      print("De computer pakt 1 lucifer weg")
   turn = 0
 
 
