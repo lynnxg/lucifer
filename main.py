@@ -33,13 +33,13 @@ def computer_actie():
   global aantallucifers
   if aantallucifers > 0:
     if aantallucifers > 3:
-
+      aantalwegpakken2  = random.randint(1 , 3)
     elif aantallucifers == 3:
-
+      aantallucifers -= 2
     elif aantallucifers == 2:
-
+      aantallucifers -=1
     else:
-
+      aantallucifers -=1
   turn = 0
 
 
