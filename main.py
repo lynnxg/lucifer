@@ -14,17 +14,18 @@ aantallucifers = random.randint(20 , 25)
 print("We beginnen met %s lucifers." % aantallucifers)
 print()
 
-#Lopend spel
 
+#Lopend spel
 
 def speler_actie():
   turn = 1
   print("Er zijn nog %s lucifers" % aantallucifers)
-  print("Hoeveel wil je er pakken?")
+  aantalwegpakken = input("Hoeveel wil je er pakken?")
   print("Aantal lucifers over: %s" % aantallucifers)
 
 def computer_actie():
   turn = 0
+
 
 #Beurten
 turn = 0
