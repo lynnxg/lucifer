@@ -11,13 +11,17 @@ welcome_message()
 
 import random
 aantallucifers = random.randint(20 , 25)
-print()
 print("We beginnen met %s lucifers." % aantallucifers)
+print()
 
 #Lopend spel
 
+
 def speler_actie():
   turn = 1
+  print("Er zijn nog %s lucifers" % aantallucifers)
+  print("Hoeveel wil je er pakken?")
+  print("Aantal lucifers over: %s" % aantallucifers)
 
 def computer_actie():
   turn = 0
