@@ -12,6 +12,7 @@ welcome_message()
 #Aantal lucifers waar het spel mee begint
 import random
 aantallucifers = random.randint(20 , 25)
+
 print("We beginnen met %s lucifers." % aantallucifers)
 print()
 
@@ -28,7 +29,6 @@ def speler_actie():
    print("Aantal lucifers over: %s" % aantallucifers)
    print()
    turn = 1
-
 
 def computer_actie():
   global aantallucifers
@@ -59,7 +59,6 @@ while aantallucifers > 0:
    speler_actie()
   elif turn == 1:
    computer_actie()
-
 
 #Eind bericht
 if aantallucifers <= 0:
