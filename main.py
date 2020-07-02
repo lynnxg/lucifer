@@ -62,4 +62,7 @@ while aantallucifers > 0:
 
 #Eind bericht
 if aantallucifers <= 0:
-  
+  if turn == 0:
+   print(".")
+  if turn == 1:
+   print(".")
