@@ -47,6 +47,7 @@ def computer_actie():
     else:
       aantallucifers -=1
       print("De computer pakt 1 lucifer weg")
+      print()
     turn = 0
 
 
@@ -63,6 +64,6 @@ while aantallucifers > 0:
 #Eind bericht
 if aantallucifers <= 0:
   if turn == 0:
-   print("1")
+   print("Jij hebt gewonnen!")
   if turn == 1:
-   print("2")
+   print("De computer heeft gewonnen.")
